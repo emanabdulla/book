@@ -1,0 +1,84 @@
+## This file was created by Tawny-OWL
+## It should not be edited by hand
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: walk_through: <http://purl.org/ontolink/walk_through#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://purl.org/ontolink/walk_through>
+
+Import: <http://www.purl.org/ontolink/tawny>
+
+Annotations: 
+    <http://www.purl.org/ontolink/tawny#name> "walk_through"@en
+
+AnnotationProperty: <http://www.purl.org/ontolink/tawny#name>
+
+    
+Datatype: rdf:PlainLiteral
+
+    
+ObjectProperty: walk_through:about
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "about"@en
+    
+    
+Class: walk_through:Bird
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "Bird"@en
+    
+    SubClassOf: 
+        walk_through:Subject
+    
+    DisjointWith: 
+        walk_through:Ontology
+    
+    
+Class: walk_through:Book
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "Book"@en
+    
+    
+Class: walk_through:Ontology
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "Ontology"@en
+    
+    SubClassOf: 
+        walk_through:Subject
+    
+    DisjointWith: 
+        walk_through:Bird
+    
+    
+Class: walk_through:Subject
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "Subject"@en
+    
+    
+Class: walk_through:TakeWing
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "TakeWing"@en
+    
+    SubClassOf: 
+        walk_through:Book
+    
+    
+Class: walk_through:TawnyOWL
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "TawnyOWL"@en
+    
+    SubClassOf: 
+        walk_through:Ontology
+    
+    
